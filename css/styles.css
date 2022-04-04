@@ -1,10 +1,110 @@
 :root {
+    --hero-background-color: #2F303A;
+    --second-background-color: #F5F4FA;
+    --footer-background-color: #2F303A;
+    --first-header-color: #212121;
+    --second-header-color: #757575;
+    --hero-color: #ffffff;
+    --title-color: #212121;
+    --after-title-color: #757575;
+    --first-btn-color: #ffffff;
+    --second-btn-color: #212121;
+    --accent-color: #2196F3;
+    --first-footer-color: #ffffff;
+    --second-footer-color: rgba(255, 255, 255, 0.6);
 
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #212121;
+    
 }
 
 .list {
     list-style: none;
 }
+.link {
+    text-decoration: none;
+    
+}
+/* -----------Шапка сайта-------------- */
+
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.accent {
+    color: var(--accent-color);
+
+}
+
+.header-link,
+.header-contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+    
+}
+
+.header-link {
+    color: var(--first-header-color);
+}
+
+.header-contacts-link {
+    color: var(--second-header-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: var(--accent-color);
+}
+
+/*-------- Герой ----------- */
+
+.hero {
+    background-color: var(--hero-background-color);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,36; 
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-color);
+}
+
+.price-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--first-btn-color);
+    background-color: #2196F3;
+}
+
+.price-btn:hover,
+.price-btn:focus {
+    background-color: #188CE8;
+
+}
+
+
+/* -------------Преимущества------------ */
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -16,4 +116,135 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+
+
+.benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+}
+
+.benefits-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    color: var(--after-title-color);
+}
+
+/* --------- Работы --------- */
+.about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+}
+
+/* --------- Работники --------- */
+
+.team {
+    background-color: var(--second-background-color);
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+}
+
+.team-list-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,18;
+    letter-spacing: 0.03em;
+    
+}
+
+.team-list-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,18;
+    letter-spacing: 0.03em;
+}
+
+/* -------------Футер----------- */
+.footer {
+    background-color: var(--footer-background-color);
+}
+
+
+.footer-address,
+.footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    
+}
+.footer-address {
+    color: var(--first-footer-color);
+}
+
+.footer-link {
+   color: var(--second-footer-color);
+}
+
+.footer-address:hover,
+.footer-address:focus,
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
+}
+
+
+/* -----------------Портфолио------------ */
+
+
+
+
+.project-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,62;
+    letter-spacing: 0.03em;
+}
+
+.project-btn:hover,
+.project-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--first-btn-color);
+}
+.button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+.projects-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;    
+    letter-spacing: 0.06em;
+    
+}
+
+.projects-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,88;
+    letter-spacing: 0.03em;
+    color: var(--after-title-color);
 }
