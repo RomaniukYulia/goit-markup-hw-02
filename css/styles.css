@@ -12,13 +12,16 @@
     --accent-color: #2196F3;
     --first-footer-color: #ffffff;
     --second-footer-color: rgba(255, 255, 255, 0.6);
+    --first-logo-color: #212121;
+    --second-logo-color: #ffffff;
+    
 
 }
 
 body {
     font-family: Roboto, sans-serif;
     background-color: #ffffff;
-    color: #212121;
+    color: var(--title-color);
     
 }
 
@@ -34,12 +37,11 @@ body {
 
 .logo {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--first-logo-color);
 }
 .accent {
     color: var(--accent-color);
@@ -94,7 +96,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--first-btn-color);
-    background-color: #2196F3;
+    background-color: var(--accent-color);
 }
 
 .price-btn:hover,
@@ -130,7 +132,7 @@ body {
 }
 
 .benefits-text {
-    font-weight: 400;
+    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -171,12 +173,11 @@ body {
 }
 
 .team-list-text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+   
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    color: var(--after-title-color);
 }
 
 /* -------------Футер----------- */
@@ -184,10 +185,13 @@ body {
     background-color: var(--footer-background-color);
 }
 
+.footer .logo {
+    color: var(--second-logo-color) ;
+}
 
 .footer-address,
 .footer-link {
-    font-weight: 400;
+    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -242,7 +246,7 @@ body {
 }
 
 .projects-text {
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
